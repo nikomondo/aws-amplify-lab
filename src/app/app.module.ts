@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatToolbarModule,
     AmplifyAngularModule,
-    MDBBootstrapModule,
+    MDBBootstrapModule.forRoot() ,
     FormsModule,
   ],
   providers: [
