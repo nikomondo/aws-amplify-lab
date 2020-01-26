@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class AppComponent {
+export class HeaderComponent implements OnInit {
 
   signEdIn: boolean;
   user: any;
   greetings: string;
-
+  
+  ngOnInit() {
+  }
   constructor(private amplifyService: AmplifyService) {
     this.amplifyService.authStateChange$
       .subscribe(authSate => {

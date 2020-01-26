@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "aplifylab",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamplifyed0364e3",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
